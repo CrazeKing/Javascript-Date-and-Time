@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Date and Time</title>
+</head>
+
+<body>
+    <center>
+        <h1>DISPLAY DATE AND TIME</h1>
+        <button class="btn" onclick="displayDateTime()">CLICK HERE</button>
+        <p style="margin-top: 30px;" id="datetime"></p>
+    </center>
+    
+    <!--JavaScript for Displaying Current Date and Time-->
+    <script>
+        function displayDateTime() 
+        {
+            var currentDate = new Date();
+            document.getElementById("datetime").innerHTML = "<b>Current Date and Time is</b><br><br>" + currentDate;
+        }
+    </script>
+</body>
+
+</html>
